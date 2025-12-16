@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employer Profile – Odd Jobs NZ</title>
+</head>
+<body>
+  <h2>Create Employer Profile</h2>
+
+  <form onsubmit="location.href='post-job.html'; return false;">
+    <p>Name / Business:<br><input required></p>
+    <p>Email:<br><input type="email" required></p>
+    <p>Phone:<br><input required></p>
+    <p>Location (NZ):<br><input required></p>
+
+    <p>
+      <label>
+        <input type="checkbox" required>
+        I understand Odd Jobs NZ does not employ workers
+      </label>
+    </p>
+
+    <button type="submit">Continue to post job</button>
+  </form>
+</body>
+</html>
+Create post-job.html:
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Post a Job – Odd Jobs NZ</title>
+</head>
+<body>
+  <h2>Post a Job</h2>
+
+  <form>
+    <p>Job title:<br><input required></p>
+    <p>Job type:<br>
+      <select>
+        <option>Mowing / Gardening</option>
+        <option>Fruit Picking</option>
+        <option>Forestry</option>
+        <option>General Odd Jobs</option>
+      </select>
+    </p>
+    <p>Description:<br><textarea></textarea></p>
+    <p>Location:<br><input></p>
+    <p>Contact details:<br><input></p>
+
+    <button type="submit">Submit job</button>
+  </form>
+
+  <p>Jobs are visible to workers once posted.</p>
+</body>
+</html>
