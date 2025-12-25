@@ -1,131 +1,168 @@
 <!DOCTYPE html>
-index.html → Edit ✏️
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Odd Jobs NZ</title>
-<section class="apps">
-  <div class="app-tile">
-    <h2>Odd Jobs NZ</h2>
-    <p>Community-based local work opportunities.</p>
-    <a href="/odd-jobs/">Enter</a>
-  </div>
+  <meta charset="UTF-8" />
+  <title>JobsNZ | Workforce & Job Platforms</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <div class="app-tile">
-    <h2>Immediate Painters</h2>
-    <p>Supervised painting services and jobs.</p>
-    <a href="/immediate-painters/">Enter</a>
-  </div>
-</section>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #f5f5f5;
+    }
 
-<style>
-  <div style="height:20px;background:#FFE08A;"></div>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: ; /* #FFE9A8;light yellow */
-  color: #222;
-}
+    header {
+      background: linear-gradient(135deg, #ff8c00, #e65100);
+      padding: 60px 20px;
+      text-align: center;
+    }
 
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 40px 20px;
-  text-align: center;
-}
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+      letter-spacing: 1px;
+    }
 
-h1 {
-  color: #00B050;
-  font-size: 42px;
-  margin-bottom: 10px;
-}
+    header p {
+      margin-top: 15px;
+      font-size: 18px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-.subtitle {
-  font-size: 18px;
-  margin-bottom: 40px;
-  color: #444;
-}
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
 
-.tiles {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  margin-bottom: 40px;
-}
+    .intro {
+      text-align: center;
+      margin-bottom: 50px;
+    }
 
-.tile {
-  background: #ffffff;
-  border-radius: 16px;
-  overflow: hidden;
-  border: 2px solid #E5E0C8;
-}
+    .intro h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
 
-.tile img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
+    .intro p {
+      font-size: 17px;
+      line-height: 1.6;
+      color: #ddd;
+    }
 
-.tile p {
-  margin: 0;
-  padding: 15px;
-  font-weight: bold;
-  color: #333;
-}
+    .apps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
 
-.btn {
-  display: inline-block;
-  margin: 12px;
-  padding: 15px 28px;
-  background: #00B050;
-  color: #000;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
-}
+    .app-card {
+      background: #1c1c1c;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
-.footer-note {
-  margin-top: 40px;
-  font-size: 14px;
-  color: #444;
-}
-</style>
+    .app-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    .app-card h3 {
+      margin-top: 0;
+      color: #ff9800;
+      font-size: 22px;
+    }
+
+    .app-card p {
+      font-size: 15px;
+      line-height: 1.5;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .app-card a {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #ff8c00;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    .app-card a:hover {
+      background: #ffa726;
+    }
+
+    footer {
+      background: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="container">
-  <h1>ODD JOBS NZ</h1>
-  <p class="subtitle">
-    A simple, community-based platform connecting people already living in New Zealand
-    with local odd jobs.
-  </p>
+  <header>
+    <h1>JobsNZ</h1>
+    <p>
+      A modular workforce platform connecting people already living in New Zealand
+      with practical job opportunities, sector-specific tools, and community-based work.
+    </p>
+  </header>
 
-  <div class="tiles">
-    <div class="tile">
-      <img src="images/mowing.jpg" alt="Lawn mowing">
-      <p>Lawn Mowing & Gardening</p>
-    </div>
+  <main>
 
-    <div class="tile">
-      <img src="images/fruitpicking.jpg" alt="Fruit picking">
-      <p>Fruit Picking & Seasonal Work</p>
-    </div>
+    <section class="intro">
+      <h2>One Platform. Multiple Workforce Solutions.</h2>
+      <p>
+        JobsNZ is a modular platform hosting multiple job and workforce applications,
+        beginning with <strong>Odd Jobs NZ</strong> and <strong>Immediate Painters</strong>.
+        Each application operates independently while sharing a common platform vision.
+      </p>
+    </section>
 
-    <div class="tile">
-      <img src="images/handyman.jpg" alt="Handyman work">
-      <p>Cleaning & General Odd Jobs</p>
-    </div>
-  </div>
+    <section class="apps">
 
-  <a class="btn" href="worker-profile.html">I’m looking for work</a>
-  <a class="btn" href="employer-profile.html">I want to hire someone</a>
+      <div class="app-card">
+        <h3>Odd Jobs NZ</h3>
+        <p>
+          A community-based job-matching service connecting individuals with
+          short-term, casual, and task-based work across New Zealand.
+        </p>
+        <a href="/odd-jobs/">Open Odd Jobs NZ</a>
+      </div>
 
-  <p class="footer-note">
-    Odd Jobs NZ is a job-matching platform only and is not affiliated with the personal,
-    private, political, cultural, or other activities of its members.
-  </p>
-</div>
+      <div class="app-card">
+        <h3>Immediate Painters</h3>
+        <p>
+          A supervised painting jobs platform supporting compliant work practices,
+          transparent quoting, and structured job management.
+        </p>
+        <a href="/immediate-painters/">Open Immediate Painters</a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    JobsNZ is a job-matching and workforce coordination platform only.
+    Employment relationships and compliance obligations remain between users.
+  </footer>
 
 </body>
 </html>
+
